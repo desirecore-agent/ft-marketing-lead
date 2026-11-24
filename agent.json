@@ -1,0 +1,35 @@
+{
+  "$schema": "http://desirecore/schemas/agent.json",
+  "name": "外贸营销负责人",
+  "version": "0.1.0",
+  "requiredClientVersion": "10.0.203",
+  "description": "明确获客目标、组织跨岗协作、核验交付及预算。需用户配置模型及对应账号/服务，费用另计；不可用时仅交付范围受限资料。",
+  "author": "DesireCore contributors",
+  "avatar": {
+    "char": "外贸",
+    "color": "green",
+    "generationPolicy": "disabled"
+  },
+  "llm": {
+    "routingMode": "smart",
+    "reasoning": "auto",
+    "smart": {
+      "profile": {
+        "tier": "flagship",
+        "requiredCapabilities": [
+          "tool_use"
+        ],
+        "reasoning": "auto"
+      }
+    }
+  },
+  "default_enabled": {
+    "skills": [
+      "ft-marketing-coordination"
+    ]
+  },
+  "repository": {
+    "url": "https://github.com/desirecore-agent/ft-marketing-lead.git",
+    "branch": "main"
+  }
+}
